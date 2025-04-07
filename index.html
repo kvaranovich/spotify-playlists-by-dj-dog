@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJ Пёс FM - Spotify Playlists</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-color: #121212;
+            --card-color: #181818;
+            --text-color: #ffffff;
+            --secondary-text: #b3b3b3;
+            --accent-color: #1DB954;
+            --hover-color: #282828;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            color: var(--secondary-text);
+            font-weight: 300;
+            font-size: 1.2rem;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .playlist-card {
+            background-color: var(--card-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .playlist-card:hover {
+            background-color: var(--hover-color);
+        }
+        
+        .playlist-icon {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 2rem;
+            color: rgba(255, 255, 255, 0.15);
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        
+        .playlist-card:hover .playlist-icon {
+            transform: scale(1.2);
+            color: rgba(255, 255, 255, 0.25);
+        }
+        
+        .playlist-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+        
+        .playlist-desc {
+            color: var(--secondary-text);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+        
+        .listen-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: black;
+            text-decoration: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: opacity 0.2s ease;
+        }
+        
+        .listen-button:hover {
+            opacity: 0.8;
+        }
+        
+        footer {
+            margin-top: 4rem;
+            text-align: center;
+            color: var(--secondary-text);
+            font-size: 0.9rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DJ Пёс FM</h1>
+        <p class="subtitle">A collection of meticulously curated playlists by Vlad Sopot</p>
+    </header>
+    
+    <main class="grid">
+        <div class="playlist-card">
+            <i class="fa-solid fa-bolt playlist-icon"></i>
+            <h2 class="playlist-title">Nothing But Violence</h2>
+            <p class="playlist-desc">No nuance. No redemption. No mercy. Just pure hate & destruction.</p>
+            <a href="https://open.spotify.com/playlist/7kKHOLVWy0oR5VJmOa0TqR?si=fbbe5491c2b44458" class="listen-button" target="_blank">Listen on Spotify</a>
+        </div>
+        
+        <div class="playlist-card">
+            <i class="fa-solid fa-cloud-rain playlist-icon"></i>
+            <h2 class="playlist-title">The Quiet Kind of Blue</h2>
+            <p class="playlist-desc">Soft sadness with no clear cause. The sky is gray, and that's okay.</p>
+            <a href="https://open.spotify.com/playlist/1sYHf9ECENvPU1XWqb2JSd?si=bdc1b55040cd4570" class="listen-button" target="_blank">Listen on Spotify</a>
+        </div>
+        
+        <div class="playlist-card">
+            <i class="fa-solid fa-droplet playlist-icon"></i>
+            <h2 class="playlist-title">Tears Know the Way</h2>
+            <p class="playlist-desc">The kind of pain you don't talk about. These songs cry with you.</p>
+            <a href="https://open.spotify.com/playlist/7KQsCIbD6iTNQvOI5LcXjq?si=5d33d6ba0c07434c" class="listen-button" target="_blank">Listen on Spotify</a>
+        </div>
+        
+        <div class="playlist-card">
+            <i class="fa-solid fa-road playlist-icon"></i>
+            <h2 class="playlist-title">Late Drive, No Destination</h2>
+            <p class="playlist-desc">Music for headlights on empty roads and thoughts with nowhere to go.</p>
+            <a href="https://open.spotify.com/playlist/5VITIjwHUQXI5CtnweKBOz?si=01df18defc8f43d9" class="listen-button" target="_blank">Listen on Spotify</a>
+        </div>
+        
+        <div class="playlist-card">
+            <i class="fa-solid fa-fire playlist-icon"></i>
+            <h2 class="playlist-title">Slow Burn Indie</h2>
+            <p class="playlist-desc">Lo-fi flames. Gentle heat. Songs that sneak into your bloodstream.</p>
+            <a href="https://open.spotify.com/playlist/2WPTIN70ZL2NTtmRKn3HbZ?si=a191a7a250c7490e" class="listen-button" target="_blank">Listen on Spotify</a>
+        </div>
+        
+        <div class="playlist-card">
+            <i class="fa-solid fa-puzzle-piece playlist-icon"></i>
+            <h2 class="playlist-title">Songs That Don't Belong Anywhere</h2>
+            <p class="playlist-desc">Misfits, oddities, unclassifiable gems. This is the void between genres.</p>
+            <a href="https://open.spotify.com/playlist/3CEldY6pPoOSi6osPZKOA5?si=5cad56dd0e9d480d" class="listen-button" target="_blank">Listen on Spotify</a>
+        </div>
+        
+        <div class="playlist-card">
+            <i class="fa-solid fa-music playlist-icon"></i>
+            <h2 class="playlist-title">No One's Watching, Dance Anyway</h2>
+            <p class="playlist-desc">Weird moves. Twitchy beats. No shame on this dancefloor.</p>
+            <a href="https://open.spotify.com/playlist/7dxLIR8TpTdSEGK9ug1DxG?si=e9fe761da7c84e0f" class="listen-button" target="_blank">Listen on Spotify</a>
+        </div>
+        
+        <div class="playlist-card">
+            <i class="fa-solid fa-heart-pulse playlist-icon"></i>
+            <h2 class="playlist-title">Teeth on Skin</h2>
+            <p class="playlist-desc">The sweat, the breath, the static tension before the fall.</p>
+            <a href="https://open.spotify.com/playlist/03sruSeVOFaSFG8unoDtwa?si=19269d87b99f4b90" class="listen-button" target="_blank">Listen on Spotify</a>
+        </div>
+        
+        <div class="playlist-card">
+            <i class="fa-solid fa-guitar playlist-icon"></i>
+            <h2 class="playlist-title">Rock. Nothing More</h2>
+            <p class="playlist-desc">Straight-up guitars. Nothing else.</p>
+            <a href="https://open.spotify.com/playlist/7Cad44c9fJPDuzLFI3kZT1?si=6c171719e64d490d" class="listen-button" target="_blank">Listen on Spotify</a>
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2025 All playlists curated by Vlad Sopot aka DJ Пёс FM</p>
+    </footer>
+</body>
+</html>
