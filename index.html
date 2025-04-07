@@ -67,10 +67,18 @@
             cursor: pointer;
             position: relative;
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
         
         .playlist-card:hover {
             background-color: var(--hover-color);
+        }
+        
+        .playlist-content {
+            flex-grow: 1;
+            margin-bottom: 1.5rem;
         }
         
         .playlist-icon {
@@ -96,7 +104,7 @@
         .playlist-desc {
             color: var(--secondary-text);
             font-size: 0.95rem;
-            margin-bottom: 1rem;
+            margin-bottom: 0;
             font-weight: 300;
         }
         
@@ -145,64 +153,82 @@
     <main class="grid">
         <div class="playlist-card">
             <i class="fa-solid fa-bolt playlist-icon"></i>
-            <h2 class="playlist-title">Nothing But Violence</h2>
-            <p class="playlist-desc">No nuance. No redemption. No mercy. Just pure hate & destruction.</p>
+            <div class="playlist-content">
+                <h2 class="playlist-title">Nothing But Violence</h2>
+                <p class="playlist-desc">No nuance. No redemption. No mercy. Just pure hate & destruction.</p>
+            </div>
             <a href="https://open.spotify.com/playlist/7kKHOLVWy0oR5VJmOa0TqR?si=fbbe5491c2b44458" class="listen-button" target="_blank">Listen on Spotify</a>
         </div>
         
         <div class="playlist-card">
             <i class="fa-solid fa-cloud-rain playlist-icon"></i>
-            <h2 class="playlist-title">The Quiet Kind of Blue</h2>
-            <p class="playlist-desc">Soft sadness with no clear cause. The sky is gray, and that's okay.</p>
+            <div class="playlist-content">
+                <h2 class="playlist-title">The Quiet Kind of Blue</h2>
+                <p class="playlist-desc">Soft sadness with no clear cause. The sky is gray, and that's okay.</p>
+            </div>
             <a href="https://open.spotify.com/playlist/1sYHf9ECENvPU1XWqb2JSd?si=bdc1b55040cd4570" class="listen-button" target="_blank">Listen on Spotify</a>
         </div>
         
         <div class="playlist-card">
             <i class="fa-solid fa-droplet playlist-icon"></i>
-            <h2 class="playlist-title">Tears Know the Way</h2>
-            <p class="playlist-desc">The kind of pain you don't talk about. These songs cry with you.</p>
+            <div class="playlist-content">
+                <h2 class="playlist-title">Tears Know the Way</h2>
+                <p class="playlist-desc">The kind of pain you don't talk about. These songs cry with you.</p>
+            </div>
             <a href="https://open.spotify.com/playlist/7KQsCIbD6iTNQvOI5LcXjq?si=5d33d6ba0c07434c" class="listen-button" target="_blank">Listen on Spotify</a>
         </div>
         
         <div class="playlist-card">
             <i class="fa-solid fa-road playlist-icon"></i>
-            <h2 class="playlist-title">Late Drive, No Destination</h2>
-            <p class="playlist-desc">Music for headlights on empty roads and thoughts with nowhere to go.</p>
+            <div class="playlist-content">
+                <h2 class="playlist-title">Late Drive, No Destination</h2>
+                <p class="playlist-desc">Music for headlights on empty roads and thoughts with nowhere to go.</p>
+            </div>
             <a href="https://open.spotify.com/playlist/5VITIjwHUQXI5CtnweKBOz?si=01df18defc8f43d9" class="listen-button" target="_blank">Listen on Spotify</a>
         </div>
         
         <div class="playlist-card">
             <i class="fa-solid fa-fire playlist-icon"></i>
-            <h2 class="playlist-title">Slow Burn Indie</h2>
-            <p class="playlist-desc">Lo-fi flames. Gentle heat. Songs that sneak into your bloodstream.</p>
+            <div class="playlist-content">
+                <h2 class="playlist-title">Slow Burn Indie</h2>
+                <p class="playlist-desc">Lo-fi flames. Gentle heat. Songs that sneak into your bloodstream.</p>
+            </div>
             <a href="https://open.spotify.com/playlist/2WPTIN70ZL2NTtmRKn3HbZ?si=a191a7a250c7490e" class="listen-button" target="_blank">Listen on Spotify</a>
         </div>
         
         <div class="playlist-card">
             <i class="fa-solid fa-puzzle-piece playlist-icon"></i>
-            <h2 class="playlist-title">Songs That Don't Belong Anywhere</h2>
-            <p class="playlist-desc">Misfits, oddities, unclassifiable gems. This is the void between genres.</p>
+            <div class="playlist-content">
+                <h2 class="playlist-title">Songs That Don't Belong Anywhere</h2>
+                <p class="playlist-desc">Misfits, oddities, unclassifiable gems. This is the void between genres.</p>
+            </div>
             <a href="https://open.spotify.com/playlist/3CEldY6pPoOSi6osPZKOA5?si=5cad56dd0e9d480d" class="listen-button" target="_blank">Listen on Spotify</a>
         </div>
         
         <div class="playlist-card">
             <i class="fa-solid fa-music playlist-icon"></i>
-            <h2 class="playlist-title">No One's Watching, Dance Anyway</h2>
-            <p class="playlist-desc">Weird moves. Twitchy beats. No shame on this dancefloor.</p>
+            <div class="playlist-content">
+                <h2 class="playlist-title">No One's Watching, Dance Anyway</h2>
+                <p class="playlist-desc">Weird moves. Twitchy beats. No shame on this dancefloor.</p>
+            </div>
             <a href="https://open.spotify.com/playlist/7dxLIR8TpTdSEGK9ug1DxG?si=e9fe761da7c84e0f" class="listen-button" target="_blank">Listen on Spotify</a>
         </div>
         
         <div class="playlist-card">
             <i class="fa-solid fa-heart-pulse playlist-icon"></i>
-            <h2 class="playlist-title">Teeth on Skin</h2>
-            <p class="playlist-desc">The sweat, the breath, the static tension before the fall.</p>
+            <div class="playlist-content">
+                <h2 class="playlist-title">Teeth on Skin</h2>
+                <p class="playlist-desc">The sweat, the breath, the static tension before the fall.</p>
+            </div>
             <a href="https://open.spotify.com/playlist/03sruSeVOFaSFG8unoDtwa?si=19269d87b99f4b90" class="listen-button" target="_blank">Listen on Spotify</a>
         </div>
         
         <div class="playlist-card">
             <i class="fa-solid fa-guitar playlist-icon"></i>
-            <h2 class="playlist-title">Rock. Nothing More</h2>
-            <p class="playlist-desc">Straight-up guitars. Nothing else.</p>
+            <div class="playlist-content">
+                <h2 class="playlist-title">Rock. Nothing More</h2>
+                <p class="playlist-desc">Straight-up guitars. Nothing else.</p>
+            </div>
             <a href="https://open.spotify.com/playlist/7Cad44c9fJPDuzLFI3kZT1?si=6c171719e64d490d" class="listen-button" target="_blank">Listen on Spotify</a>
         </div>
     </main>
